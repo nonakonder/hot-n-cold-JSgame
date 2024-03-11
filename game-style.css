@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Font usage parameters
+
+.hachi-maru pop-regular {
+  font-family: "Hachi Maru Pop", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+.concert-one-regular {
+  font-family: "Concert One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+}
+
+*/
+:root{
+    --main-font-family: "Concert One", sans-serif;
+    --second-font-family:"Hachi Maru Pop", cursive;
+    --color-primary: #C8B6FF;
+    --color-secondary: #FFD6FF;
+    --color-cold: #BBD0FF;
+    --color-freezing: #A2D2FF;
+    --color-hot: #FF8FAB;
+    --color-boiling: #FB6F92;
+}
+body{
+    background-color:#FFD6FF;
+}
+h1{
+    display: block;
+    font-family: var(--main-font-family);
+    font-size: 50px;
+    width: max-content;
+    margin: auto;
+    padding: 15px;
+}
+h1>span{
+    font-family: var(--second-font-family);
+}
+.instructions{
+    display: block;
+    font-family: var(--main-font-family);
+    width: fit-content;
+    margin: auto;
+    padding-bottom: 5px;
+}
+
+.result > p{
+    font-size: 25px;
+}
+
+.password{
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    gap: 0px;
+}
+.input-container{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 50px;
+    background-color: white;
+    border-radius: 45px;
+    box-shadow: 0 5px 40px var(--color-hot);
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number]{
+    text-align: center;
+    font-size: 30px;
+    border: none; 
+}
+
+.input-container > button {
+    color:#FF8FAB;
+    background-color:#ffffff;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    /*cursor: pointer; bem legal habilita a maozinha*/
+}
+.decrement{
+    padding: 5px 10px 10px 10px;
+    border-radius: 0 0 45px 45px;
+}
+
+.increment{
+    padding: 10px 10px 5px 10px;
+    border-radius: 45px 45px 0 0;
+}
+
+#button{
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    color:var(--color-primary);
+    background-color:#ffffff;
+    border:none;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.result > p{ 
+    display: block;
+    font-family: var(--main-font-family);
+    margin: auto;
+    width: fit-content;
+}

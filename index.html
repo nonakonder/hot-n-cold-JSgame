@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HOT N'COLD GAME</title>
+    <link rel="stylesheet" href="game-style.css">
+</head>
+<body>
+    
+    <h1>HotN'Cold<span>Game</span></h1>
+    <p class="instructions">Encontre a senha secreta com o auxílio de dicas 'QUENTE' e 'FRIO'. </p>
+    <p  class="instructions">Dê seu palpite:</p>
+
+    <div class="password">
+        <div class="input-container">
+            <button class="increment" onclick="stepper(this,'n1')"> + </button>
+            <input type="number" name="user-guess" id="n1" min="0" max="9" step="1" value="0" readonly>
+            <!--o atributo step define de quanto em quantos números eu quero que o meu seletor selecione-->
+            <button class="decrement" onclick="stepper(this,'n1')"> - </button>
+        </div>
+        <div class="input-container">
+            <button class="increment" onclick="stepper(this,'n2')"> + </button>
+            <input type="number" name="user-guess" id="n2" min="0" max="9" step="1" value="0" readonly>
+            <!--o atributo step define de quanto em quantos números eu quero que o meu seletor selecione-->
+            <button class="decrement" onclick="stepper(this,'n2')"> - </button>
+        </div>
+        </div>
+    </div>
+
+    <div class="result">
+    <p id="message"></p>
+    </div>
+
+    <button id="button" onclick="novaTentativa()" class="button-style">Começar</button>
+
+    <script src="button.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
